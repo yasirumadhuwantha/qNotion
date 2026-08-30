@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>eQuiz - Daily Quiz to Test Your JavaScript Knowledge!</title>
+     <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+     <link rel="stylesheet" href="/master.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="header">
+          <div class="container">
+               <div class="navbar">
+                    <a href="/" class="logo">
+                         <img src="/images/logo.svg" alt="notNotion">
+                         <span>qNotion</span>
+                    </a>
+                    <nav>
+                         <ul class="nav-items">
+                              <li class="active">
+                                   <a href="/quiz">Quiz</a>
+                              </li>
+                              <li>
+                                   <a href="/todo-list">Todo List</a>
+                              </li>
+                              <li>
+                                   <a href="/news">News</a>
+                              </li>
+                              <li>
+                                   <a href="/progress-board">Progress Board</a>
+                              </li>
+                              <li>
+                                   <a href="/budget-manager">Budget Manager</a>
+                              </li>
+                              <li>
+                                   <a href="/bookmark-manager">Bookmark Manager</a>
+                              </li>
+                              <span class="newsletter">Join Newsletter</span>
+                         </ul>
+                    </nav>
+                    <div class="hamburger">
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <main>
+          <section class="quiz">
+               <!-- <div class="heading">
+                    <p class="title">eQuiz</p>
+                    <p class="subtitle">Daily Quiz to Test Your JavaScript Knowledge!</p>
+               </div> -->
+
+               <div class="result hide">
+                    <p>You Scored 5/5!</p>
+                    <p class="reload">
+                         <button onclick="location.reload()" class="reloadBtn">Try Again?</button>
+                    </p>
+               </div>
+
+               <form class="quiz-form">
+                    <div class="question">
+                         <p>1. What is the output of <strong>typeof null</strong> in JavaScript?</p>
+                         <div class="option">
+                              <input type="radio" name="q1" id="q1-a" value="A" checked>
+                              <label for="q1-a">null</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q1" id="q1-b" value="B">
+                              <label for="q1-b">undefined</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q1" id="q1-c" value="C">
+                              <label for="q1-c">object</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q1" id="q1-d" value="D">
+                              <label for="q1-d">boolean</label>
+                         </div>
+                    </div>
+
+                    <div class="question">
+                         <p>2. Which keyword declares a block-scoped variable that cannot be reassigned?</p>
+                         <div class="option">
+                              <input type="radio" name="q2" id="q2-a" value="A" checked>
+                              <label for="q2-a">var</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q2" id="q2-b" value="B">
+                              <label for="q2-b">let</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q2" id="q2-c" value="C">
+                              <label for="q2-c">const</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q2" id="q2-d" value="D">
+                              <label for="q2-d">static</label>
+                         </div>
+                    </div>
+
+                    <div class="question">
+                         <p>3. What will <strong>console.log(1 + "2" + 3)</strong> output?</p>
+                         <div class="option">
+                              <input type="radio" name="q3" id="q3-a" value="A" checked>
+                              <label for="q3-a">6</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q3" id="q3-b" value="B">
+                              <label for="q3-b">"123"</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q3" id="q3-c" value="C">
+                              <label for="q3-c">"15"</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q3" id="q3-d" value="D">
+                              <label for="q3-d">"33"</label>
+                         </div>
+                    </div>
+
+                    <div class="question">
+                         <p>4. Which method removes the last element from an array?</p>
+                         <div class="option">
+                              <input type="radio" name="q4" id="q4-a" value="A" checked>
+                              <label for="q4-a">shift()</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q4" id="q4-b" value="B">
+                              <label for="q4-b">pop()</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q4" id="q4-c" value="C">
+                              <label for="q4-c">slice()</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q4" id="q4-d" value="D">
+                              <label for="q4-d">splice()</label>
+                         </div>
+                    </div>
+
+                    <div class="question">
+                         <p>5. What is the result of <strong>0.1 + 0.2 === 0.3</strong>?</p>
+                         <div class="option">
+                              <input type="radio" name="q5" id="q5-a" value="A" checked>
+                              <label for="q5-a">true</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q5" id="q5-b" value="B">
+                              <label for="q5-b">false</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q5" id="q5-c" value="C">
+                              <label for="q5-c">undefined</label>
+                         </div>
+                         <div class="option">
+                              <input type="radio" name="q5" id="q5-d" value="D">
+                              <label for="q5-d">NaN</label>
+                         </div>
+                    </div>
+                    <div class="submit">
+                         <input type="submit" value="Submit">
+                    </div>
+               </form>
+          </section>
+     </main>
+
+     <footer>
+          <div class="container">
+               <div class="footer">
+                    <div class="brand-name">
+                         <span>© qNotion by Yasiru Madhuwantha</span>
+                    </div>
+                    <div class="social-icons">
+                         <i class="bi bi-twitter social"></i>
+                         <i class="bi bi-linkedin social"></i>
+                         <i class="bi bi-youtube social"></i>
+                         <i class="bi bi-instagram social"></i>
+                    </div>
+               </div>
+          </div>
+     
+          <section class="modal">
+               <div class="newsletter-modal">
+                    <p>Join Newsletter Now!</p>
+                    <form>
+                         <input type="text" name="name" placeholder="Name" autocomplete="off">
+                         <input type="email" name="email" placeholder="Email" autocomplete="off">
+                         <input type="submit" value="Submit">
+                    </form>
+                    <i class="bi bi-x-lg close"></i>
+               </div>
+          </section>
+     </footer>
+
+     <script src="/main.js"></script>
+     <script src="./index.js"></script>
+
+</body>
+</html>
