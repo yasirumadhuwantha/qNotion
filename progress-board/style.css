@@ -153,6 +153,7 @@
 
 .add {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .add input {
